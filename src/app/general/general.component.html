@@ -1,0 +1,41 @@
+<div class="container-fluid resultBox" [ngStyle]="{'background-image':'url('+ backgroundUrl +')'}">
+    <div class="row">
+        <div class="col-9 mx-auto mt-3 searchBox" autocomplete="off">
+            <div class="form-group form-inline col-12">
+                <input type="text" class="form-control col-12 m-auto" placeholder="Search what you want to predict"
+                    #search>
+                <button class="btn btn-primary position-absolute" id="search"
+                    (click)="this.getResult(search.value); search.value=''">
+                    <img src="{{searchLogo}}" alt="search">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="result container-fluid col-10">
+        <div class="row p-4" *ngIf="showResult">
+            <h3 class="text-center col-6">
+                Current Search
+            </h3>
+            <div class="card p-4 col-6 data">
+                <h2>{{this.currentSearchValue.companyName}} </h2> <br>
+                {{currentSearchValue.generalValues}} <br>
+                {{ currentSearchValue.searchTime.toDateString() }}
+            </div>
+        </div>
+        <div class="container-fluid col-10" *ngIf="presentHistory">
+            <h3 class="text-center mt-4 card-header">
+                Search History
+            </h3>
+            <br>
+            <div class="row">
+                <div class="col-12 card-body text-muted" *ngFor="let search of pastSearch">
+                    <span class="card p-4 data">
+                        <h2>{{ search.companyName }} </h2><br>
+                        {{search.generalValues }} <br>
+                        {{search.searchTime.toDateString()}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

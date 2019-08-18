@@ -1,0 +1,13 @@
+
+.stockLinks{
+    padding: 20px 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgba(214, 210, 210, 0.39);
+    box-shadow: 2px 2px 5px rgba(99, 95, 95, 0.561);
+}
+.stockLinks:hover{
+    background: rgba(231, 213, 213, 0.918);
+}

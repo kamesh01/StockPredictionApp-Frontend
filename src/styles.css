@@ -1,0 +1,55 @@
+.resultBox {
+  background: #aaa;
+  min-height: 90vh;
+}
+
+.resultBox .searchBox .form-group {
+  height: 100px;
+  padding: 0;
+}
+
+.resultBox .searchBox .form-group .form-control {
+  padding: 30px;
+  font-size: 1.3em;
+  border-radius: 35px;
+  background: rgba(241, 241, 241, 0.185);
+  color: white;
+  border: none;
+}
+
+.resultBox .searchBox .form-group .form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+.resultBox .searchBox .form-group .form-control:-ms-input-placeholder {
+  color: white;
+}
+
+.resultBox .searchBox .form-group .form-control::-ms-input-placeholder {
+  color: white;
+}
+
+.resultBox .searchBox .form-group .form-control::placeholder {
+  color: white;
+}
+
+.resultBox .searchBox .form-group button {
+  right: 6px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.resultBox .searchBox .form-group button img {
+  left: 0;
+}
+
+.resultBox .result h3 {
+  color: #fff;
+}
+
+.resultBox .result .data {
+  background: rgba(241, 241, 241, 0.473);
+}
+/*# sourceMappingURL=styles.css.map */

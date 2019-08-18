@@ -1,0 +1,29 @@
+<div class="container-fulid">
+    <!-- This is the root component which contains all the component based on router-outlet -->
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-light bg-dark">
+                <a class="navbar-brand text-light" href="#" style="font-size: 1.8em">
+                    <img src="../assets/shared/Stock-Logo.svg " width="50" height="50" class="d-inline-block align-top"
+                        alt="">
+                    {{title}}
+                </a>
+                <div class="ml-auto mr-2" id="navbarContent">
+                    <ul class="navbar-nav ml-auto mt-1">
+                        <li class="nav-item">
+                            <span class="navbar-brand text-light">Hii, Rebeca </span>
+                            <img src="../assets/shared/user-profile.png" alt="Profile pic" id="user-dp"
+                                style="width: 60px; height: 60px;">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- The different pages will render here -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

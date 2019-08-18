@@ -1,0 +1,8 @@
+<div class="container pt-5 pb-2">
+    <div class="row">
+        <a *ngFor="let stock of this.stockList" (click)="showStockView(stock.url); setBackgroundImage(stock.bgImg)"
+            class="col-12 text-center my-2 stockLinks ">
+            <div><strong>{{ stock.name }}</strong></div>
+        </a>
+    </div>
+</div>

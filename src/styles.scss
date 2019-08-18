@@ -1,0 +1,40 @@
+
+.resultBox{
+    background: #aaa;
+    min-height: 90vh;
+    .searchBox{
+        .form-group{
+            height: 100px;
+            padding: 0;
+            .form-control{
+                padding: 30px;
+                font-size: 1.3em;
+                border-radius: 35px;
+                background: rgba(241, 241, 241, 0.185);
+                color: white;
+                border: none;
+                &::placeholder{
+                    color: white;
+                }
+            }
+            button{
+                right: 6px; 
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                padding: 10px;
+                img{
+                    left: 0;
+                }
+            }
+        }
+    }
+    .result{
+        h3{
+            color: #fff;
+        }
+        .data{
+            background: rgba(241, 241, 241, 0.473);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.container-fulid{
+    overflow-x: hidden;
+}
+.routerView{
+    background: rgba(230, 227, 227, 0.623);
+    border: 2px solid red;
+    width: 100%;
+}
